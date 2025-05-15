@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Watch helpful videos about bullying prevention and kindness - Safe Space">
+    <title>Safe Space - Videos</title>
+    <!-- Google Fonts - Nunito for child-friendly typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+          <a href="index.html">
+            <img src="logo.png" alt="Safe Space Logo" width="45" height="45" />
+            <h1>Safe Space</h1>
+          </a>
+        </div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="education.html">Learn</a></li>
+                    <li><a href="videos.html" class="active">Videos</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h2>Watch & Learn</h2>
+                <p>Explore our collection of videos about bullying prevention, kindness, and how to be an upstander.</p>
+            </div>
+        </section>
+
+        <!-- Video Categories -->
+        <section class="section">
+            <div class="container">
+                <div class="video-categories">
+                    <input type="radio" name="video-category" id="all-videos" checked>
+                    <label for="all-videos" class="category-label">All Videos</label>
+
+                    <input type="radio" name="video-category" id="younger-kids">
+                    <label for="younger-kids" class="category-label">For Younger Kids (5-9)</label>
+
+                    <input type="radio" name="video-category" id="older-kids">
+                    <label for="older-kids" class="category-label">For Older Kids (10-13)</label>
+
+                    <input type="radio" name="video-category" id="teens">
+                    <label for="teens" class="category-label">For Teens (14+)</label>
+
+                    <input type="radio" name="video-category" id="parents">
+                    <label for="parents" class="category-label">For Parents & Teachers</label>
+                </div>
+
+                <div class="video-grid fade-in">
+                    <!-- Video 1 - For Younger Kids -->
+                    <div class="video-card" data-category="younger-kids">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/4mrE5zgEvt4/maxresdefault.jpg"
+                                alt="Be Kind - Anti-Bullying Animation">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Be Kind - Anti-Bullying Animation</h3>
+                            <p class="video-description">A gentle animation showing how small acts of kindness can make
+                                a big difference.</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 2:45</span>
+                                <span class="video-age">Ages 5-9</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=4mrE5zgEvt4" target="_blank"
+                                class="btn btn-primary btn-sm">Watch on YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 - For Older Kids -->
+                    <div class="video-card" data-category="older-kids">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/MV5v0m5e0ZI/maxresdefault.jpg"
+                                alt="Bullying - Stop It!">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Bullying - Stop It!</h3>
+                            <p class="video-description">A powerful video showing how to recognize and stand up to
+                                bullying situations.</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 5:17</span>
+                                <span class="video-age">Ages 10-13</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=MV5v0m5e0ZI" target="_blank"
+                                class="btn btn-primary btn-sm">Watch on YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 - For Teens -->
+                    <div class="video-card" data-category="teens">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/CFekuzDcaFw/maxresdefault.jpg"
+                                alt="Cyberbullying: What It Is and How To Stop It">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Cyberbullying: What It Is and How To Stop It</h3>
+                            <p class="video-description">Learn about cyberbullying, its effects, and what you can do to
+                                prevent it online.</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 3:18</span>
+                                <span class="video-age">Ages 14+</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=CFekuzDcaFw" target="_blank"
+                                class="btn btn-primary btn-sm">Watch on YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 - For Parents & Teachers -->
+                    <div class="video-card" data-category="parents">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/HgM89P1S7YQ/maxresdefault.jpg"
+                                alt="What Can Parents Do About Bullying?">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>What Parents Can Do About Bullying</h3>
+                            <p class="video-description">Expert advice for parents on how to recognize the signs of
+                                bullying and effectively support your child.</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 7:22</span>
+                                <span class="video-age">For Parents</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=HgM89P1S7YQ" target="_blank"
+                                class="btn btn-primary btn-sm">Watch on YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Video 5 - For Younger Kids -->
+                    <div class="video-card" data-category="younger-kids">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/W-PcL3qU3J0/maxresdefault.jpg"
+                                alt="The Meanest Girl in Second Grade">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>The Meanest Girl in Second Grade</h3>
+                            <p class="video-description">A story about how a young girl learns to be kind after
+                                experiencing the consequences of her actions.</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 8:45</span>
+                                <span class="video-age">Ages 5-9</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=W-PcL3qU3J0" target="_blank"
+                                class="btn btn-primary btn-sm">Watch on YouTube</a>
+                        </div>
+                    </div>
+
+                    <!-- Video 6 - For Older Kids -->
+                    <div class="video-card" data-category="older-kids">
+                        <div class="video-thumbnail">
+                            <img src="https://img.youtube.com/vi/9XJDhDBq-so/maxresdefault.jpg"
+                                alt="How to Be an Upstander">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>How to Be an Upstander</h3>
+                            <p class="video-description">Learn practical ways to safely stand up for others and make a
+                                difference when you see bullying.</p>
+                            <div class="video-meta">
+                                <span class="video-duration"><i class="fas fa-clock"></i> 4:32</span>
+                                <span class="video-age">Ages 10-13</span>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=9XJDhDBq-so" target="_blank"
+                                class="btn btn-primary btn-sm">Watch on YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Submit Video Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Suggest a Video</h2>
+                <p class="section-subtitle">Know of a great video about bullying prevention that we should add to our
+                    collection? Let us know!</p>
+
+                <div class="form-container suggest-video-form">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="869df777-c89e-40cc-84ee-af930fabbe4b">
+
+                        <!-- Redirect URL after form submission -->
+                        <input type="hidden" name="redirect" value="success.html">
+
+                        <!-- Botcheck field (anti-spam) -->
+                        <input type="checkbox" name="botcheck" style="display: none;" class="hidden">
+
+                        <div class="form-group">
+                            <label for="video_title">Video Title:</label>
+                            <input type="text" id="video_title" name="video_title" class="form-control"
+                                placeholder="Title of the video" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="video_url">Video URL:</label>
+                            <input type="url" id="video_url" name="video_url" class="form-control"
+                                placeholder="https://www.youtube.com/watch?v=..." required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="video_description">Why is this video helpful?</label>
+                            <textarea id="video_description" name="video_description" class="form-control" rows="3"
+                                placeholder="Please tell us why you think this video would be helpful for others..."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="video_age_group">Best for:</label>
+                            <select id="video_age_group" name="video_age_group" class="form-control" required>
+                                <option value="">Select age group</option>
+                                <option value="younger">Younger Kids (5-9)</option>
+                                <option value="older">Older Kids (10-13)</option>
+                                <option value="teens">Teens (14+)</option>
+                                <option value="parents">Parents & Teachers</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="your_name">Your Name:</label>
+                            <input type="text" id="your_name" name="your_name" class="form-control"
+                                placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="your_email">Your Email:</label>
+                            <input type="email" id="your_email" name="your_email" class="form-control"
+                                placeholder="Your email address">
+                            <div class="form-text">We'll only use this to contact you if we have questions about the
+                                video.</div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Submit Video</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Safe Space</h3>
+                    <p>A safe space where children can learn about bullying, report incidents, and find resources to
+                        help.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="report.html">Report Bullying</a></li>
+                        <li><a href="education.html">Learn About Bullying</a></li>
+                        <li><a href="videos.html">Watch Videos</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Get Help Now</h3>
+                    <ul>
+                        <li><a href="tel:1-800-555-0123">Emergency Helpline: 1-800-555-0123</a></li>
+                        <li><a href="mailto:help@bullyfreezone.org">help@bullyfreezone.org</a></li>
+                        <li><a href="#">Text "HELP" to 12345</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Safe Space. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

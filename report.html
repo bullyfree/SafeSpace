@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Report bullying incidents safely and confidentially at Safe Space">
+  <title>Safe Space - Report Bullying</title>
+  <!-- Google Fonts - Nunito for child-friendly typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo.png" alt="Safe Space Logo" width="45" height="45" />
+            <h1>Safe Space</h1>
+          </a>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="report.html" class="active">Report</a></li>
+          <li><a href="education.html">Learn</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h2>Report Bullying</h2>
+        <p>Use this form to report a bullying incident. Your information is kept confidential and will only be shared
+          with people who can help.</p>
+      </div>
+    </section>
+
+    <!-- Report Form -->
+    <section class="section">
+      <div class="container">
+        <div class="form-container slide-up">
+          <form class="report-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="869df777-c89e-40cc-84ee-af930fabbe4b">
+            <input type="hidden" name="redirect" value="http://127.0.0.1:5500/success.html">
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+
+            <div class="form-note">
+              <p><i class="fas fa-info-circle"></i> Fields marked with * are required. All other fields are optional but
+                help us better understand the situation.</p>
+            </div>
+
+            <div class="form-section">
+              <h3>Your Information</h3>
+              <p class="form-section-note">We keep your personal information confidential. You may remain anonymous if
+                you prefer.</p>
+
+              <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Your full name">
+              </div>
+
+              <div class="form-group">
+                <label for="age">Your Age:</label>
+                <select id="age" name="age" class="form-control">
+                  <option value="">Select your age</option>
+                  <option value="Under 10">Under 10</option>
+                  <option value="10-12">10-12</option>
+                  <option value="13-15">13-15</option>
+                  <option value="16-18">16-18</option>
+                  <option value="Adult">Adult (reporting for a child)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="school">School Name:</label>
+                <input type="text" id="school" name="school" class="form-control" placeholder="Name of your school">
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>Incident Details</h3>
+              <p class="form-section-note">Please provide as much information as you can about what happened.</p>
+
+              <div class="form-group">
+                <label for="incident_date">When did it happen?</label>
+                <input type="date" id="incident_date" name="incident_date" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="incident_location">Where did it happen?</label>
+                <input type="text" id="incident_location" name="incident_location" class="form-control"
+                  placeholder="Classroom, playground, online, etc.">
+              </div>
+
+              <div class="form-group">
+                <label for="incident_description">What happened? *</label>
+                <textarea id="incident_description" name="incident_description" class="form-control" rows="6"
+                  placeholder="Please describe what happened in as much detail as you can..." required></textarea>
+                <div class="form-text">This is the only required field. Please tell us what happened.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="bully_name">Who did it?</label>
+                <input type="text" id="bully_name" name="bully_name" class="form-control"
+                  placeholder="Name of the person who was bullying">
+              </div>
+
+              <div class="form-group">
+                <label for="witnesses">Were there any witnesses?</label>
+                <input type="text" id="witnesses" name="witnesses" class="form-control"
+                  placeholder="Names of people who saw what happened">
+              </div>
+
+              <div class="form-group">
+                <label>Have you reported this before?</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="reported_before" value="Yes"> Yes
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="reported_before" value="No" checked> No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-actions">
+
+              <button type="submit" class="btn btn-primary">Submit Report</button>
+              <button type="reset" class="btn btn-outline">Clear Form</button>
+            </div>
+
+            <div class="form-note mt-4">
+              <p><i class="fas fa-shield-alt"></i> We take your privacy seriously. This report will only be shared with
+                adults who can help.</p>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Need Help Now Section -->
+    <section class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Need Help Now?</h2>
+        <div class="help-options">
+          <div class="help-option">
+            <div class="help-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call the Helpline</h3>
+            <p>Talk to someone who can help right away:</p>
+            <a href="tel:+91 88823-36597" class="btn btn-primary">+91 88823-36597</a>
+          </div>
+
+          <div class="help-option">
+            <div class="help-icon">
+              <i class="fas fa-comment-dots"></i>
+            </div>
+            <h3>Text for Help</h3>
+            <p>Text "HELP" to 12345 to chat with a counselor.</p>
+            <a href="#" class="btn btn-primary">Text Now</a>
+          </div>
+
+          <div class="help-option">
+            <div class="help-icon">
+              <i class="fas fa-user-friends"></i>
+            </div>
+            <h3>Talk to a Trusted Adult</h3>
+            <p>A parent, teacher, counselor, or other adult you trust can help you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Safe Space</h3>
+          <p>A safe space where children can learn about bullying, report incidents, and find resources to help.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="report.html">Report Bullying</a></li>
+            <li><a href="education.html">Learn About Bullying</a></li>
+            <li><a href="videos.html">Watch Videos</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Get Help Now</h3>
+          <ul>
+            <li><a href="tel:1-800-555-0123">Emergency Helpline: 1-800-555-0123</a></li>
+            <li><a href="mailto:help@bullyfreezone.org">help@bullyfreezone.org</a></li>
+            <li><a href="#">Text "HELP" to 12345</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2025</span> Safe Space. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
