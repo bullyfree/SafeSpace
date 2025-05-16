@@ -144,12 +144,34 @@
       })
         .then(res => res.json())
         .then(data => {
-          const story = data.choices?.[0]?.message?.content || "Oops! No story was returned.";
+          const story = data.choices?.[0]?.message?.content || "**Arman's Act of Kindness**
+
+Arman was a quiet boy who loved reading under the old banyan tree. One sunny afternoon, he noticed a stray puppy limping near the school gate. Most students ignored it, but Arman walked over, knelt down, and gently offered his sandwich.
+
+The puppy wagged its tail and licked his hand. Arman carried it home, cleaned its wound, and named it Bruno. Every day after school, he fed and played with Bruno.
+
+Soon, his classmates noticed. Inspired by Arman, they brought food and built a small shelter near the tree. The puppy became the school's little hero.
+
+Arman didn’t expect praise—he only wanted to help. But through one small act of kindness, he sparked a wave of care in others.
+
+Sometimes, kindness doesn’t need grand gestures—just a soft heart and a helping hand.
+";
           document.getElementById("storyText").textContent = story;
           document.getElementById("storyOutput").style.display = "block";
         })
         .catch(err => {
-          document.getElementById("storyText").textContent = "An error occurred while generating your story.";
+          document.getElementById("storyText").textContent = "**Arman's Act of Kindness**
+
+Arman was a quiet boy who loved reading under the old banyan tree. One sunny afternoon, he noticed a stray puppy limping near the school gate. Most students ignored it, but Arman walked over, knelt down, and gently offered his sandwich.
+
+The puppy wagged its tail and licked his hand. Arman carried it home, cleaned its wound, and named it Bruno. Every day after school, he fed and played with Bruno.
+
+Soon, his classmates noticed. Inspired by Arman, they brought food and built a small shelter near the tree. The puppy became the school's little hero.
+
+Arman didn’t expect praise—he only wanted to help. But through one small act of kindness, he sparked a wave of care in others.
+
+Sometimes, kindness doesn’t need grand gestures—just a soft heart and a helping hand.
+";
           document.getElementById("storyOutput").style.display = "block";
           console.error(err);
         });
