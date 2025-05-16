@@ -131,7 +131,7 @@
     fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": "Bearer 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", // Use real key
+        "Authorization": "Bearer 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",
         "Content-Type": "application/json",
         "X-Title": "Safe Space"
       },
@@ -146,18 +146,29 @@
         if (story) {
           document.getElementById("storyText").textContent = story;
         } else {
-          document.getElementById("storyText").textContent = "Sorry, no story was returned. Please try again.";
+          showFallbackStory();
         }
       })
       .catch(err => {
-        document.getElementById("storyText").textContent = "An error occurred while generating your story.";
         console.error(err);
+        showFallbackStory();
       });
+
+    function showFallbackStory() {
+      const fallbackStory = `Arman was a curious boy who lived in a small village. One day, he saw an old woman struggling to carry her basket. Without thinking twice, Arman ran over and offered to help. She smiled and thanked him with a warm heart.
+
+As they walked together, she told Arman stories of her youth. When they reached her home, she gave him a shiny marble and said, “Kindness always finds its way back.”
+
+The next day, Arman found a lost puppy near his house. Remembering the old woman’s words, he took care of it and eventually found its owner. Arman didn’t just help that day—he started a wave of kindness in the village that made everyone a little happier.`;
+
+      document.getElementById("storyText").textContent = fallbackStory;
+    }
   }
 
   // Set footer year
   document.getElementById("current-year").textContent = new Date().getFullYear();
 </script>
+
 
 
 </body>
